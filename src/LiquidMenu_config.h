@@ -22,12 +22,12 @@ used in the library, also configures the debugging messages.
  * @name Arduino's parallel "LiquidCrystal" library
  * @{
  */
-#ifndef LIQUIDMENU_LIBRARY
-    #define LIQUIDMENU_LIBRARY LiquidCrystal_LIBRARY ///< wrapped library ID
-#endif
-#ifndef DisplayClass
-    #define DisplayClass LiquidCrystal ///< name of wrapped library's class
-#endif
+// #ifndef LIQUIDMENU_LIBRARY
+//     #define LIQUIDMENU_LIBRARY LiquidCrystal_LIBRARY ///< wrapped library ID
+// #endif
+// #ifndef DisplayClass
+//     #define DisplayClass LiquidCrystal ///< name of wrapped library's class
+// #endif
 //!@}
 
 /*!
@@ -35,13 +35,13 @@ used in the library, also configures the debugging messages.
  * @see https://github.com/johnrickman/LiquidCrystal_I2C
  * @{
  */
-// #ifndef LIQUIDMENU_LIBRARY
-//     #define LIQUIDMENU_LIBRARY LiquidCrystal_I2C_LIBRARY
-// #endif
-// #ifndef DisplayClass
-//     #define DisplayClass LiquidCrystal_I2C
-// #endif
-//!@}
+#ifndef LIQUIDMENU_LIBRARY
+    #define LIQUIDMENU_LIBRARY LiquidCrystal_I2C_LIBRARY
+#endif
+#ifndef DisplayClass
+    #define DisplayClass LiquidCrystal_I2C
+#endif
+// !@}
 
 /*!
  * @name Some other library
